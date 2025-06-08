@@ -1,0 +1,9 @@
+fox: quick brown fox jumps lazy dog, <0.1667>
+fox: beautiful day, <0.0000>
+fox: sells sea shells seashore, <0.0000>
+day: quick brown fox jumps lazy dog, <0.0000>
+day: beautiful day, <0.5000>
+day: sells sea shells seashore, <0.0000>
+seashore: quick brown fox jumps lazy dog, <0.0000>
+seashore: beautiful day, <0.0000>
+seashore: sells sea shells seashore, <0.2500>

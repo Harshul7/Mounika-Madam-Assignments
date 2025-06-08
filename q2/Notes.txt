@@ -1,0 +1,9 @@
+${var%pattern} Eg: str="while.xyz.ab" (Removes the shortest match from the end)
+echo ${str%.*} -> "while.xyz"
+${var%%pattern} Eg: str="while.xyz.ab" ( Removes the longest match from the end)
+echo ${str%%.*} -> "while"
+dob="26/05/2025" -> o/p=26 ;echo ${dob%%/*}
+${var#pattern} Eg: str="while.xyz.ab" (Removes the shortest match from the start)
+echo ${str#*.}-> "xyz.ab"
+${var##pattern}Eg: str="while.xyz.ab" (Removes the longest match from the start)
+echo ${str##*.}-> "ab"

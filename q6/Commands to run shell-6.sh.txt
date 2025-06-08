@@ -1,0 +1,6 @@
+bash shell-6.sh -C insert -f fname -l lname -n number -o company
+bash shell-6.sh -C delete -c "first name" -v fname
+bash shell-6.sh -C search -c " last name" -v lname
+bash shell-6.sh -C edit -k sundar -f fname -lname -n number -o company 
+bash shell-6.sh -C display -a
+bash shell-6.sh -C display -d
