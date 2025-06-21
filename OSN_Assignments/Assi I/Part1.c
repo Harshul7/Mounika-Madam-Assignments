@@ -5,6 +5,7 @@
 #include <unistd.h>//for read,write,lseek,close
 #include <string.h>//for string functions(strchr)
 #include <errno.h>//for errno(to handle errors)
+#include <direct.h>
 
 #define CHUNK_SIZE 8192  // 8KB chunks for processing
 //when reading large files instead of reading whole file into memeory at once,we read it in small parts or chunks to save memory and improve I/O performance
@@ -48,7 +49,9 @@ int main(int argc, char *argv[]) {
     if errno == EEXIST that means directory already exists and we ignore this error
     if errno  is not EEXIST ,it means that something went wrong like permission denied, no disk space etc.
     then perror prints the error message along with mkdir and EXIT_FAILURE exits the program with failure status    */
-    if (mkdir(dir_name, 0700) == -1) {
+    //if (mkdir(dir_name, 0700) == -1)
+    if(mkdir(dir_name)==-1)
+     {
         if (errno != EEXIST) {
             perror("mkdir failed");
             exit(EXIT_FAILURE);
